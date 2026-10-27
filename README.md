@@ -28,7 +28,8 @@ Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem
 
 ## Detalhes escondidos
 
-- **Console (F12):** um recado para quem inspeciona o site, definido no início do `script.js`.
+- **Console (F12):** um recado para quem inspeciona o site, com a pista da senha da flag, definido no início do `script.js`.
+- **Mini terminal:** abre ao clicar no `$ whoami` do topo. Comandos: `help`, `ls` (e `ls -a`, que mostra o oculto `.dica`), `cat`, `date`, `sudo`, `clear` e `exit`. O `flag.txt` pede senha (`h3ll0w0rld`); a cadeia de pistas é boas-vindas > `ls -a` > `.dica` > console F12. O HTML fica no fim do `index.html` e a lógica em `initTerminal()` no `script.js`.
 - **404.html:** página no estilo terminal para endereços inexistentes. Usa caminhos absolutos (`/style.css`) porque o GitHub Pages a serve em qualquer endereço.
 - **security.txt:** contato para relatar falhas. O campo `Expires` precisa ser renovado uma vez por ano (próximo vencimento: outubro de 2027).
 
