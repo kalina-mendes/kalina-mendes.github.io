@@ -1,0 +1,4 @@
+Contact: mailto:k4l1x@proton.me
+Expires: 2027-10-27T00:00:00.000Z
+Preferred-Languages: pt
+Canonical: https://k4l1.com/.well-known/security.txt

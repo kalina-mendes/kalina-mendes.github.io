@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K4L1</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0E0F13">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .notfound { min-height: 100vh; display: grid; align-items: center; padding-block: 4rem; }
+    .nf-term { font-family: var(--mono); font-size: var(--step--1); color: var(--muted); display: grid; gap: 0.35rem; overflow-wrap: anywhere; }
+    .nf-term .prompt-sign, .nf-path { color: var(--accent); }
+    .nf-title { margin-top: 2.5rem; font-size: var(--step-4); font-weight: 650; font-stretch: 80%; letter-spacing: -0.025em; line-height: 0.95; }
+    .nf-text { margin-top: 1.25rem; max-width: 34rem; font-size: var(--step-1); color: var(--muted); }
+    .nf-actions { margin-top: 2.25rem; }
+  </style>
+</head>
+<body>
+  <main class="notfound">
+    <div class="container">
+      <div class="nf-term" aria-hidden="true">
+        <p><span class="prompt-sign">$</span> cd <span class="nf-path" data-path>/</span></p>
+        <p>bash: cd: <span data-path>/</span>: arquivo ou diretório não encontrado<span class="caret"></span></p>
+      </div>
+      <h1 class="nf-title">Erro 404</h1>
+      <p class="nf-text">Esta página não existe, ou ainda não foi criada.</p>
+      <p class="nf-actions"><a class="btn btn-accent" href="/">Voltar ao início</a></p>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var path = decodeURIComponent(location.pathname).slice(0, 60) || '/';
+      document.querySelectorAll('[data-path]').forEach(function (el) { el.textContent = path; });
+    })();
+  </script>
+</body>
+</html>

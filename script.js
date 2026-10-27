@@ -4,6 +4,14 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+  /* Recado para quem abre o console (F12) */
+  const mono = 'font-family: monospace; font-size: 13px; color: #B69CFF;';
+  console.log(
+    '%c> acesso concedido.\n> usuário detectado: curioso(a)\n> nível de permissão: somente leitura\n%cSe você chegou até aqui, a gente tem muito em comum.\nk4l1x@proton.me',
+    mono,
+    'font-family: monospace; font-size: 13px; color: inherit;'
+  );
+
   document.addEventListener('DOMContentLoaded', () => {
     initHeader();
     initMenu();

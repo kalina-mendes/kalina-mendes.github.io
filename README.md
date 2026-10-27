@@ -7,7 +7,7 @@ Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem
 - **Modo escuro**, fundo grafite `#0E0F13`, texto `#ECEEF3`, texto secundário `#989EAD`.
 - **Destaque violeta** `#B69CFF`, tirado do fundo da foto de perfil. Combina com as fotos de música sem competir com elas.
 - **Tipografia:** Instrument Sans nos textos e JetBrains Mono nas datas (formato `2025/2027`), rótulos e detalhes técnicos. As duas fontes estão dentro do projeto.
-- **Personalidade de segurança, com sobriedade:** `$ whoami` no topo (digita "Hello, World!" e responde `k4l1`), codinome K4L1 no logo e na aba, moldura de "identidade verificada" na foto e títulos de seção temáticos (Perfil, Registro, Base técnica, Outra frequência, Canal seguro), cada um com um rótulo simples acima (`~/sobre`, `~/trajetoria`...). O menu usa nomes diretos.
+- **Personalidade de segurança, com sobriedade:** `$ whoami` no topo (digita "Hello, World!" e responde `k4l1`), codinome K4L1 na aba, moldura de "identidade verificada" na foto e títulos de seção temáticos (Perfil, Registro, Base técnica, Outra frequência, Canal seguro), cada um com um rótulo simples acima (`~/sobre`, `~/trajetoria`...). O menu usa nomes diretos.
 
 ## Estrutura
 
@@ -16,13 +16,21 @@ Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem
 ├── index.html
 ├── style.css
 ├── script.js
+├── 404.html                      página de erro para endereços que não existem
 ├── CNAME                         domínio k4l1.com
 ├── README.md
 └── assets/
     ├── fonts/                    Instrument Sans e JetBrains Mono
     ├── icons/                    favicon.svg e apple-touch-icon.png
     └── images/                   foto de perfil, fotos de música e og-image.png
+.well-known/security.txt          como relatar falhas de segurança (RFC 9116)
 ```
+
+## Detalhes escondidos
+
+- **Console (F12):** um recado para quem inspeciona o site, definido no início do `script.js`.
+- **404.html:** página no estilo terminal para endereços inexistentes. Usa caminhos absolutos (`/style.css`) porque o GitHub Pages a serve em qualquer endereço.
+- **security.txt:** contato para relatar falhas. O campo `Expires` precisa ser renovado uma vez por ano (próximo vencimento: outubro de 2027).
 
 ## Onde editar
 
