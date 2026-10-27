@@ -57,10 +57,10 @@
     <section class="hero" id="topo" aria-labelledby="nome">
       <div class="container hero-grid">
         <div class="hero-text">
-          <div class="prompt step" aria-hidden="true">
-            <p><span class="prompt-sign">$</span> whoami</p>
-            <p class="prompt-out"><span data-typed>k4l1</span><span class="caret"></span></p>
-          </div>
+          <button class="prompt step" type="button" data-terminal-open aria-label="Abrir terminal" title="Abrir terminal">
+            <span class="prompt-line" aria-hidden="true"><span class="prompt-sign">$</span> <span class="prompt-cmd">whoami</span></span>
+            <span class="prompt-out" aria-hidden="true"><span data-typed>k4l1</span><span class="caret"></span></span>
+          </button>
           <h1 class="hero-name step" id="nome">Kalina Mendes</h1>
           <p class="hero-title step"><span class="hero-part">Estudante de Tecnologia</span> <span class="hero-sep" aria-hidden="true">|</span> <span class="hero-part">Trilha em Cibersegurança</span></p>
           <p class="hero-lead step">Descriptografando a cibersegurança, um byte por vez.</p>
@@ -313,5 +313,18 @@
       </ul>
     </div>
   </footer>
+
+  <!-- TERMINAL: abre ao clicar no "$ whoami" do topo -->
+  <dialog class="terminal" id="terminal" aria-labelledby="terminal-titulo">
+    <div class="terminal-bar">
+      <p class="terminal-title" id="terminal-titulo">k4l1@site</p>
+      <button class="terminal-close" type="button" id="terminal-fechar" aria-label="Fechar terminal">&times;</button>
+    </div>
+    <div class="terminal-output" id="terminal-saida" aria-live="polite"></div>
+    <form class="terminal-form" id="terminal-form">
+      <label class="terminal-prompt" id="terminal-prompt" for="terminal-entrada">k4l1@site:~$</label>
+      <input class="terminal-input" id="terminal-entrada" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send">
+    </form>
+  </dialog>
 </body>
 </html>
