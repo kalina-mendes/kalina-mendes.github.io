@@ -1,13 +1,13 @@
-# kalinamendes.com
+# k4l1.com
 
-Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem backend, pronto para o GitHub Pages com domínio próprio.
+Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem backend, publicado no GitHub Pages com o domínio próprio k4l1.com.
 
 ## Direção visual
 
 - **Modo escuro**, fundo grafite `#0E0F13`, texto `#ECEEF3`, texto secundário `#989EAD`.
 - **Destaque violeta** `#B69CFF`, tirado do fundo da foto de perfil. Combina com as fotos de música sem competir com elas.
 - **Tipografia:** Instrument Sans nos textos e JetBrains Mono nas datas (formato `2025/2027`), rótulos e detalhes técnicos. As duas fontes estão dentro do projeto.
-- **Personalidade de segurança, com sobriedade:** `$ whoami` no topo, moldura de "identidade verificada" na foto e títulos de seção temáticos (Perfil, Registro, Base técnica, Outra frequência, Canal seguro), cada um com um rótulo simples acima (`~/sobre`, `~/trajetoria`...). O menu usa nomes diretos.
+- **Personalidade de segurança, com sobriedade:** `$ whoami` no topo (digita "Hello, World!" e responde `k4l1`), codinome K4L1 no logo e na aba, moldura de "identidade verificada" na foto e títulos de seção temáticos (Perfil, Registro, Base técnica, Outra frequência, Canal seguro), cada um com um rótulo simples acima (`~/sobre`, `~/trajetoria`...). O menu usa nomes diretos.
 
 ## Estrutura
 
@@ -16,7 +16,7 @@ Site pessoal de Kalina Mendes. HTML, CSS e JavaScript puro, sem frameworks e sem
 ├── index.html
 ├── style.css
 ├── script.js
-├── CNAME                         domínio kalinamendes.com
+├── CNAME                         domínio k4l1.com
 ├── README.md
 └── assets/
     ├── fonts/                    Instrument Sans e JetBrains Mono
@@ -35,13 +35,13 @@ Todo o texto está no `index.html`, dividido por comentários: `TOPO`, `SOBRE`, 
 
 ## Publicar no GitHub Pages
 
-1. Crie um repositório público em github.com (por exemplo, `kalinamendes.com` ou `site`).
+1. Crie um repositório público em github.com (o deste site é `kalina-mendes.github.io`).
 2. Envie **o conteúdo** desta pasta (o `index.html` precisa ficar na raiz) em **Add file > Upload files** e clique em **Commit changes**.
 3. Em **Settings > Pages**, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`, e salve.
 
-## Ligar o domínio kalinamendes.com
+## Domínio k4l1.com
 
-O arquivo `CNAME` já está no projeto. Falta configurar o domínio no site onde você o registrou (Registro.br, Hostinger, GoDaddy etc.), na área de **DNS**:
+O domínio foi registrado na HostGator. O arquivo `CNAME` está no projeto, e a zona DNS (HostGator > Domínios > Editar Zona Avançada de DNS) tem estes registros:
 
 | Tipo | Nome | Valor |
 |---|---|---|
@@ -51,7 +51,7 @@ O arquivo `CNAME` já está no projeto. Falta configurar o domínio no site onde
 | A | @ | 185.199.111.153 |
 | CNAME | www | kalina-mendes.github.io |
 
-Depois, em **Settings > Pages**, confira se o campo **Custom domain** mostra `kalinamendes.com`. Quando o GitHub terminar a verificação (pode levar de minutos a algumas horas), marque **Enforce HTTPS**.
+Depois, em **Settings > Pages**, confira se o campo **Custom domain** mostra `k4l1.com`. Quando o GitHub terminar a verificação (pode levar de minutos a algumas horas), marque **Enforce HTTPS**.
 
 ## Acessibilidade e desempenho
 

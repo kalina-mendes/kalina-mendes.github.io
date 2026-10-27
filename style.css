@@ -1,5 +1,5 @@
 /* =========================================================
-   kalinamendes.com
+   k4l1.com
    Modo escuro. Mobile-first. Tokens no :root.
    ========================================================= */
 
@@ -242,7 +242,9 @@ a { color: inherit; }
   color: var(--muted);
   margin-bottom: 1rem;
 }
+.prompt p { margin: 0; }
 .prompt-sign { color: var(--accent); }
+.prompt-out { color: var(--accent); min-height: 1.65em; margin-top: 0.15rem !important; }
 .caret {
   display: inline-block; width: 0.55em; height: 1.1em;
   margin-left: 0.15em; vertical-align: -0.2em;

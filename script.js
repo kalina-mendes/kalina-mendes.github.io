@@ -1,4 +1,4 @@
-/* kalinamendes.com | interações (Vanilla JS, sem dependências) */
+/* k4l1.com | interações (Vanilla JS, sem dependências) */
 (function () {
   'use strict';
 
@@ -10,6 +10,7 @@
     initReveal();
     initActiveLinks();
     initCopy();
+    initWhoami();
     const year = document.querySelector('[data-year]');
     if (year) year.textContent = new Date().getFullYear();
   });
@@ -83,6 +84,23 @@
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     map.forEach((_, section) => io.observe(section));
+  }
+
+  /* whoami: digita "Hello, World!", apaga e responde k4l1 */
+  function initWhoami() {
+    const el = document.querySelector('[data-typed]');
+    if (!el || reduceMotion.matches) return;
+    const hello = 'Hello, World!';
+    const answer = el.textContent;
+    const steps = [];
+    let t = 500;
+    for (let i = 1; i <= hello.length; i++) { steps.push([t, hello.slice(0, i)]); t += 75; }
+    t += 900;
+    for (let i = hello.length - 1; i >= 0; i--) { steps.push([t, hello.slice(0, i)]); t += 35; }
+    t += 250;
+    for (let i = 1; i <= answer.length; i++) { steps.push([t, answer.slice(0, i)]); t += 120; }
+    el.textContent = '';
+    steps.forEach(([delay, text]) => setTimeout(() => { el.textContent = text; }, delay));
   }
 
   /* Copiar e-mail, com retorno anunciado para leitores de tela */
